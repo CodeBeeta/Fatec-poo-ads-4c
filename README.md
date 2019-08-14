@@ -6,3 +6,15 @@ Fiquem avontade aqui e sejam muito BEM-VINDOS  😻
 ![](hellou.gif)
 
 Peço somente que mantenham sempre a organização em tudo 
+
+--------------------
+
+#Trabalho para 19/08 - Servlet Juro Simples e Composto
+Vou abrir o projeto para trabalharmos nesse trabalho, até Sexta-feira(16/08) conseguirão ver a pasta do projeto listada no repositório acima para edição de suas Funções. Lembrando que fazem parte do grupo:
+
+Evelyn Brandão
+Camila Santana
+Julio Takeda
+Matheus Marques
+
+
