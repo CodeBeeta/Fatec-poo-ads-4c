@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <form style="width:350px;" action="/JavaJuros/juros-composto" method="post">
+        <div class="">Calcular Juros Composto</div>
+            <!-- inicio div form---->
+            <div class="formu-meio">
+                <!----------- inicio inputs -------------------->
+                <div class="">
+                    <label class="">Montante Inicial:</label>
+                    <div class="">
+                        <input type="text" name="montante-inicial" placeholder="Monte Inicial">
+                        <span class="" id="txtbase1"></span>
+                    </div>
+                </div>
+          
+                <div class="">
+                    <label for="txtdatainicial" class="">Taxa (%):</label>
+                    <div class="">
+                        <input type="text" name="taxa-mensal" placeholder="Taxa de Juros">
+                        <span class="" id="txtdatainicial1"></span>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="txtdatafinal" class="">Tempo (meses):</label>
+                    <div class="">
+                        <input type="text" name="meses" placeholder="Data final">
+                        <span class="" id="txtdatafinal1"></span>
+                    </div>
+                </div>
+           
+                <!----------- fim inputs ----------------------->
+            </div>
+            <!-- fim div form---->
+
+            <div class="submit">
+                <div  style="text-align:right; padding-top:5px; padding-right:10px; position:relative; display:inline-block;">
+            </div>
+            <div style="display:inline-block;">
+                <input type="submit" id="btncalcular" class="btn btn-success" value="Calcular">
+            </div>
+        </div>
+    </form>
+</html>
