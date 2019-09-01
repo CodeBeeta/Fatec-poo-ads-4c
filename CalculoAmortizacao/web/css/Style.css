@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : MORDOR
 */
 
+
 .center {
   margin: auto;
   width: 60%;
@@ -18,10 +19,6 @@ and open the template in the editor.
 header .apresentacao{
     background: #51B2B1;
     color:#f2f2f2;
-}
-.marca{
-    width: 110px;
-    height: 60px;
 }
 
 .linha{

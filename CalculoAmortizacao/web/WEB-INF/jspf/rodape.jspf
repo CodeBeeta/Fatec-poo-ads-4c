@@ -1,22 +1,39 @@
 <%-- any content can be specified here e.g.: --%>
-<footer class="py-1 fixed-bottom bg-dark text-white">
-    <div class="container">
+<html>
+        <head>      
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        </head>
+        
+       <style>
+        body {
+             font-family: 'Roboto';
+       }
+       </style>
+       
+<footer class="py-0 fixed-bottom text-white">
+    <div class="container" style="background-color:#DB7093">
         <div class="row">
-            <div class="col-md-6">
-                <p style="font-size: 10px" >Desenvolvido por: <br><a href="https://github.com/Anapaulaaugusto" target="_blank" class="text-white"> 
-            <img src="ana.png" style="height: 30px; width: 30px" > Ana Paula Augusto </a> 
+            <div class="col-md-15">
+                <label style="font-size: 10px">
+            &nbsp; &nbsp; <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            Desenvolvido por: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
             <a href="https://github.com/Anapaulaaugusto" target="_blank" class="text-white"> 
-            <img src="ana.png" style="height: 30px; width: 30px" > André </a>
+            <img src="ana.png" style="height: 30px; width: 30px" >&nbsp; Ana Paula Augusto</a> &nbsp; &nbsp; &nbsp; 
+            
             <a href="https://github.com/Anapaulaaugusto" target="_blank" class="text-white"> 
-            <img src="ana.png" style="height: 30px; width: 30px" > Mauricio </a> 
+                <img src="andre.jpeg" style="height: 30px; width: 30px" >&nbsp; André Luiz da Silva </a>&nbsp; &nbsp; &nbsp;
+            
             <a href="https://github.com/Anapaulaaugusto" target="_blank" class="text-white"> 
-            <img src="ana.png" style="height: 30px; width: 30px" > Roberta </a> 
-            </p>
-            </div>
-            <div class="col-md-6">
-                <br>
-                
-                <p style="font-size: 10px"><a href="https://github.com/CodeBeeta/Fatec-poo-ads-4c" target="_blank" class="text-white">Link para o Projeto</a></p>
+            <img src="mauricio.jpeg" style="height: 30px; width: 30px" >&nbsp; Mauricio Pedro Costa e Silva </a> &nbsp; &nbsp; &nbsp;
+            
+            <a href="https://github.com/Anapaulaaugusto" target="_blank" class="text-white"> 
+            <img src="roberta.jpeg" style="height: 30px; width: 30px">&nbsp; Roberta Cardoso Novaes &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a> 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="https://github.com/CodeBeeta/Fatec-poo-ads-4c" target="_blank" class="text-white"> 
+            <img src="Git.png" style="height: 30px; width: 30px">&nbsp; Projeto GitHub </a> 
+            </label>
             </div>
         </div>
     </div>
