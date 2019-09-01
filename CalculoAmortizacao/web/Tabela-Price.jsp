@@ -11,7 +11,7 @@
     <head>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Inicio</title>
+        <title>Tabela Price</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -32,6 +32,7 @@
     <body>
         <div align="center">
         <form>
+            <h3>Tabela Price</h3>
             <br>
             <label>Capital: </label>
             <input type="text" name="capital" required placeholder="Ex:1000">
@@ -39,7 +40,7 @@
             <input type="number" name="meses" required placeholder="Ex: 4">
             <label>Taxa de juros(%):</label>
             <input type="number" name="juros" required placeholder="Ex: 3">    
-            <input type="submit" name="calcular" value="CALCULAR" class="btn-primary" href="tabela-price.jsp" role="button" style="background-color:#DB7093">
+            <input type="submit" name="calcular" value="Calcular" class="btn-primary" href="tabela-price.jsp" role="button" style="background-color:#DB7093">
     
         </form>
         <% 
@@ -59,7 +60,7 @@
                 DecimalFormat df = new DecimalFormat("###,###,##0.00"); 
         %>
                 
-        <h1 style="color:#DB7093" ><br>Tabela Price:</h1>
+        <h1 style="color:#DB7093" ><br>Resultado:</h1>
               
         <table border='1'>
                     <tr>

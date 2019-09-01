@@ -11,11 +11,11 @@
     <head>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Inicio</title>
+        <title>Amortização Constante</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Amortização Constante</title>
+        
     </head>
     
     <style>
@@ -29,21 +29,24 @@
         <%@include file="WEB-INF/jspf/menu.jspf" %>
     
          <% if(request.getParameter("calcular")==null){ %>
+          <div align="center">
         <form> 
-            <h3>Preencha as informações para calcular a amortização constante</h3>
+            <h3>Amortização constante</h3>
             <br>
             
-            Valor Financiado:
-            <input type="number" name="valorFinanciado" />
+            <label>Valor Financiado: </label>
+            <input type="number" name="valorFinanciado" required placeholder="Ex:1000">
             
-            Taxa de Juros(%):
-            <input type="number" name="taxaJuros" />
+            <label>Números de Meses:</label>
+            <input type="number" name="numeroMeses" required placeholder="Ex: 4">
             
-            Números de Meses:
-            <input type="number" name="numeroMeses" />
+            <label>Taxa de juros(%):</label>
+            <input type="number" name="taxaJuros" required placeholder="Ex: 3">    
             
-            <input type="submit" name="calcular" value="Calcular" />
+             <input type="submit" name="calcular" value="Calcular" class="btn-primary" href="tabela-price.jsp" role="button" style="background-color:#DB7093"/>
+        
         </form>
+              
         <% }else{ %>
             
             <% 
@@ -64,9 +67,13 @@
                 DecimalFormat df = new DecimalFormat("###,###,##0.00"); 
             %>
             <!-- Inicio da tabela com os cabeçalhos -->
-            <table> 
+            <div align="center">
+                <h1 style="color:#DB7093" ><br>Resultado:</h1>
+                <table border='1'>
+                <table> 
                 <tr>
-                  <th>#</th>
+                  
+                  <th>&nbsp;#</th>
                   <th>Valor da Parcela</th>
                   <th>Amortizações</th>
                   <th>Juros</th>
@@ -92,9 +99,9 @@
             <% } %>
             <!-- Fora do for, fechando a tabela -->  
             </table> 
-        
+        </div>
         <%}%>
-        
+        </div>
          <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>
