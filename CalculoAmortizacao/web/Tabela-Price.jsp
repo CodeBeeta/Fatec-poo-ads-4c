@@ -57,7 +57,7 @@
                             <%=(int) meses%>
                         </td>
                         <td>
-                            <%=juros%>%
+                            <%=(int) (juros*100)%>%
                         </td>
                     </tr>
                     <tr>
