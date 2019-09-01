@@ -1,0 +1,23 @@
+<%-- any content can be specified here e.g.: --%>
+<footer class="py-1 fixed-bottom bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p style="font-size: 10px" >Desenvolvido por: <br><a href="https://github.com/Anapaulaaugusto" target="_blank" class="text-white"> 
+            <img src="ana.png" style="height: 30px; width: 30px" > Ana Paula Augusto </a> 
+            <a href="https://github.com/Anapaulaaugusto" target="_blank" class="text-white"> 
+            <img src="ana.png" style="height: 30px; width: 30px" > André </a>
+            <a href="https://github.com/Anapaulaaugusto" target="_blank" class="text-white"> 
+            <img src="ana.png" style="height: 30px; width: 30px" > Mauricio </a> 
+            <a href="https://github.com/Anapaulaaugusto" target="_blank" class="text-white"> 
+            <img src="ana.png" style="height: 30px; width: 30px" > Roberta </a> 
+            </p>
+            </div>
+            <div class="col-md-6">
+                <br>
+                
+                <p style="font-size: 10px"><a href="https://github.com/CodeBeeta/Fatec-poo-ads-4c" target="_blank" class="text-white">Link para o Projeto</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
