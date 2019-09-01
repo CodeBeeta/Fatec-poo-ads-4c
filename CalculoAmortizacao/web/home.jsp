@@ -25,74 +25,70 @@
     <p><center>Site para executar cálculos de amortização. <br>Com amortização constante, amortização americana e cálculo em tabela price </center>  </p>
   </div>
 </header>
-<br>
+<div align="center">
 <section>
   <div class="jumbotron caixal1">
-    <h1 class="display-4">Ana Paula Augusto</h1>
+    <h1 class="display-4" style='color:#DB7093'>Ana Paula Augusto</h1>
     <div class="imagem">
      <img src="ana.png" style="height: 200px; width: 200px" >
   </div>
-    <p class="lead">Responsável pela criação da pagina inicial, com informações da equipe e design.</p>
+    <br>
     <hr class="my-4 linha">
-    <p>Estudante do curso de Análise e Desenvolvimento de Sistemas na Fatec Praia Grande.</p>
+    <p>Responsável pela criação da pagina inicial, cabeçalho, rodapé, menu e design.</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="home.jsp" role="button">Inicio</a>
+      <a class="btn-primary btn-lg" href="home.jsp" role="button" style="background-color:#DB7093">Inicio</a>
     </p>
   </div>
-</section>
-
+</section>  
 <section>
- <div class="jumbotron caixal2">
-  <div class="info">
-    <h1 class="display-4">André</h1>
+    <div class="jumbotron caixal1">
+    <h1 class="display-4" style='color:#DB7093'>André Luiz da Silva</h1>
     <div class="imagem">
      <img src="andre.jpeg" style="height: 200px; width: 200px" >
   </div>
-    <p class="lead">Responsável pela criação da página de  Amortização Constante</p>
+    <br>
     <hr class="my-4 linha">
-    <p>Estudante do curso de Análise e Desenvolvimento de Sistemas na Fatec Praia Grande.</p>
+    <p>Responsável pela criação da página da Tabela Price</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="amortizacao-constante.jsp" role="button">Constante</a>
+      <a class="btn-primary btn-lg" href="tabela-price.jsp" role="button" style="background-color:#DB7093">Tabela Price</a>
     </p>
   </div>
-</div>
 </section>
-        
+     
 <section>
   <div class="jumbotron caixal1">
-    <h1 class="display-4">Mauricio</h1>
+    <h1 class="display-4" style='color:#DB7093'>Mauricio Pedro Costa </h1>
     <div class="imagem">
      <img src="mauricio.jpeg" style="height: 200px; width: 200px" >
   </div>
-    <p class="lead">Responsável pela criação da página da Tabela Price</p>
+    <br>
     <hr class="my-4 linha">
-    <p>Estudante do curso de Análise e Desenvolvimento de Sistemas na Fatec Praia Grande.</p>
+    <p>Responsável pela criação da pagina de Amortização Americana</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="tabela-price.jsp" role="button">Tabela Price</a>
+
+      <a class="btn-primary btn-lg" href="amortizacao-americana.jsp" role="button" style="background-color:#DB7093">Americana</a>
     </p>
   </div>
 </section>
+
+    <section>
+    <div class="jumbotron caixal1">
+    <h1 class="display-4" style='color:#DB7093'>Roberta Cardoso Novaes</h1>
+    <div class="imagem">
         
-<section>
- <div class="jumbotron caixal2">
-  <div class="info">
-      
-    <h1 class="display-4">Roberta</h1>
-      <div class="imagem">
      <img src="roberta.jpeg" style="height: 200px; width: 200px" >
   </div>
-    <p class="lead">Responsável pela criação da pagina de Amortização Americana</p>
+    <br>
     <hr class="my-4 linha">
-    <p>Estudante do curso de Análise e Desenvolvimento de Sistemas na Fatec Praia Grande.</p>
+     <p>Responsável pela criação da página de  Amortização Constante</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="amortizacao-americana.jsp" role="button">Americana</a>
-    </p>
-  </div>
-
-</div>
-</section>
         
-
+      <a class="btn-primary btn-lg" href="amortizacao-constante.jsp" role="button" style="background-color:#DB7093">Constante</a>
+    </p>
+    </div>
+    </section>
+     </div>  
+      
 <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>
