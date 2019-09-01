@@ -9,18 +9,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Inicio</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+    <style>
+         body {
+             font-family: 'Roboto';
+       }
+      </style>
+    <body>
+        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+
+    <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Tabela Price</title>
     </head>
     <body>
+        <div align="center">
         <form>
+            <br>
             <label>Capital: </label>
             <input type="text" name="capital" required placeholder="Ex:1000">
             <label>Números de Meses:</label>
             <input type="number" name="meses" required placeholder="Ex: 4">
             <label>Taxa de juros(%):</label>
-            <input type="number" name="juros" required placeholder="Ex: 3">
-            <input type="submit" name="calcular" value="CALCULAR">
+            <input type="number" name="juros" required placeholder="Ex: 3">    
+            <input type="submit" name="calcular" value="CALCULAR" class="btn-primary" href="tabela-price.jsp" role="button" style="background-color:#DB7093">
+    
         </form>
         <% 
             if(request.getParameter("calcular") !=null){ 
@@ -39,15 +59,16 @@
                 DecimalFormat df = new DecimalFormat("###,###,##0.00"); 
         %>
                 
-                <h1>TABELA PRICE</h1>
-                <table border='2'>
+        <h1 style="color:#DB7093" ><br>Tabela Price:</h1>
+              
+        <table border='1'>
                     <tr>
-                        <th colspan="5">DADOS</th>
+                        <th colspan="5"><center>DADOS</center></th>
                     </tr>
                     <tr>
-                        <th colspan="3">Capital</th>
-                        <th>Meses</th>
-                        <th>Juros</th>
+                        <th colspan="3"><text style="color:#DB7093 " >Capital</th>
+                        <th><text style="color:#DB7093 " >Meses</th>
+                        <th><text style="color:#DB7093 " >Juros</th>
                     </tr>
                     <tr>
                         <td colspan="3">
@@ -62,16 +83,17 @@
                     </tr>
                     <tr>
                         <th colspan="5">
-                            RESULTADO
+                            <center> RESULTADO </center>
                         </th>
                     </tr>
-                    <tr>
+                    <tr style="color:#DB7093">
                         <th>Período</th>
                         <th>Saldo devedor(R$)</th>
                         <th>Prestação(R$)</th>
                         <th>Amortização(R$)</th>
                         <th>Juros(R$)</th>
-                    </tr>
+                    </tr>                 
+
                     <% 
                         for(int i=0; i<=meses; i++){
                         if(i==0){ %>                    
@@ -91,8 +113,13 @@
                 </table>
                 <%
             } catch(Exception ex){ %>
-            <span>Valores inválidos</span> 
+            <span style="font-size: 50px; color: red"> <br> Valores inválidos!</span> 
             <% }
-        } %>
+        } %> 
+         <br>
+          <br>
+        </div>
+       
+        <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>
