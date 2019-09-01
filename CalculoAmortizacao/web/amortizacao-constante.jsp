@@ -4,6 +4,7 @@
     Author     : Roberta Novaes
 --%>
 
+<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -44,6 +45,8 @@
                 
                 //calculo da amortização, que na amortização constante é fixa, logo n precisa ir por for
                 amortizacao = valorFinanciado/numeroMeses;
+                // Instanciando o formatador de números
+                DecimalFormat df = new DecimalFormat("###,###,##0.00"); 
             %>
             <!-- Inicio da tabela com os cabeçalhos -->
             <table> 
@@ -65,10 +68,10 @@
                 <!-- Ainda dendtro do for, criação da linha -->    
                 <tr>
                     <td><%= i+1%></td>
-                    <td><%= parcela%></td> 
-                    <td><%= amortizacao%></td>
-                    <td><%= jurosSobreSaldoDevedor%></td>
-                    <td><%= saldoDevedor%></td>
+                    <td><%= df.format(parcela)%></td> 
+                    <td><%= df.format(amortizacao)%></td>
+                    <td><%= df.format(jurosSobreSaldoDevedor)%></td>
+                    <td><%= df.format(saldoDevedor)%></td>
                 </tr>
             
             <% } %>
