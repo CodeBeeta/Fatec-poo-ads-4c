@@ -26,7 +26,7 @@
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
 
-    <form action="american.jsp">
+    <form action="amortizacao-americana.jsp">
             Valor a pagar: <input type="number" name="total"/>
             Meses a pagar: <input type="number" name="presto"/>
             % de juros> <input type="double" name="porcent"/>
