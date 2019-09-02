@@ -4,6 +4,7 @@
     Author     : MORDOR
 --%>
 
+<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -46,6 +47,8 @@
                 double valorFinal = (valorX + valorZ);
                 double valorJuros = (valorZ * valorY);
                 double valorTotal = (valorX + valorJuros);
+                // Instanciando o formatador de números
+                DecimalFormat df = new DecimalFormat("###,###,##0.00"); 
             %>
             <div align="center">
                 <h1><br>Resultado:</h1>
