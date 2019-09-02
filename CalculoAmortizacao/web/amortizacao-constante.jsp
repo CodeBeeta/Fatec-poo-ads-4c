@@ -74,6 +74,7 @@
                   <th>Juros</th>
                   <th>Saldo Devedor</th>
                 </tr>
+            <%try{%>    
             <%  for (int i = 0; i < numeroMeses; i++) { 
                 
                   saldoDevedor = (valorFinanciado - ((i+1) * amortizacao )); //calculo de saldo devedor
@@ -91,6 +92,9 @@
                     <td><%= df.format(saldoDevedor)%></td>
                 </tr>
             
+            <% } %>
+            <% }catch(Exception e){ %>
+                    <h1>A ERROR OCURRED: <%= e.getMessage() %> </h1>
             <% } %>
             <!-- Fora do for, fechando a tabela -->  
             </table> 
