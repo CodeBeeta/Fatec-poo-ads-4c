@@ -31,11 +31,11 @@
             <h3>Amortização americana</h3>
             <br>
             <label>Valor a pagar: </label>
-            <input type="number" name="total" required>
+            <input type="number" name="total" required placeholder="Ex:1000">
             <label>Meses a pagar:</label>
-            <input type="number" name="prestacoes" required>
+            <input type="number" name="prestacoes" required required placeholder="Ex: 10">
             <label>% de juros:</label>
-            <input type="number" name="porcentagem" required>    
+            <input type="number" name="porcentagem" required required placeholder="Ex:10">    
             <input type="submit" name="calcular" value="Calcular" class="btn-primary" hrel="amortizacao-americana.jsp" role="button" style="background-color:#DB7093"/>
         </form>
         <% if(request.getParameter("calcular")!= null){ 
