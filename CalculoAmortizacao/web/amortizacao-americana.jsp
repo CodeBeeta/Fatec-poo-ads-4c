@@ -24,53 +24,65 @@
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
 
-    <form action="amortizacao-americana.jsp">
-            Valor a pagar: <input type="number" name="total"/>
-            Meses a pagar: <input type="number" name="presto"/>
-            % de juros> <input type="double" name="porcent"/>
-            <input type="submit" value="Calcular"/>
+    <% if(request.getParameter("calcular")==null){ %>
+          <div align="center">
+        <form> 
+            <h3>Amortização americana</h3>
+            <br>
+            <label>Valor a pagar: </label>
+            <input type="number" name="total">
+            <label>Meses a pagar:</label>
+            <input type="number" name="prestacoes">
+            <label>% de juros:</label>
+            <input type="number" name="porcentagem">    
+            <input type="submit" name="calcular" value="Calcular" class="btn-primary" hrel="amortizacao-americana.jsp" role="button"/>
         </form>
-        <%if(request.getParameter("porcent") != null){%>
-            <%try{%>
-                <%int valorX = Integer.parseInt(request.getParameter("total"));%>
-                <%double valorY = Double.parseDouble(request.getParameter("presto"));%>
-                <%double valorZ = (valorX/Double.parseDouble(request.getParameter("porcent")))*100; %>
-                <table border="1">
+              
+        <% }else{ %>
+            <% 
+                int valorX = Integer.parseInt(request.getParameter("total"));
+                double valorY = Double.parseDouble(request.getParameter("prestacoes"));
+                double valorZ = (valorX/Double.parseDouble(request.getParameter("porcentagem")))*100;
+                double valorFinal = (valorX + valorZ);
+                double valorJuros = (valorZ * valorY);
+                double valorTotal = (valorX + valorJuros);
+            %>
+            <div align="center">
+                <h1><br>Resultado:</h1>
+                <table border='1'>
                     <tr>
-                        <th>Mês</th>
-                        <th>Saldo devedor</th>
-                        <th>Amortização</th>
-                        <th>Juros</th>
-                        <th>Prestação</th>
+                      <th>Mês</th>
+                      <th>Saldo Devedor</th>
+                      <th>Amortização</th>
+                      <th>Juros</th>
+                      <th>Prestação</th>
                     </tr>
-                    <%for(int vF=0; vF<=valorY; vF++){%>
-                        <tr>
-                            <td><%System.out.println(vF);%></td>
-                            <td><%System.out.println(valorX);%></td>
-                            <td><%System.out.println("-");%></td>
-                            <td><%System.out.println(valorZ);%></td>
-                            <td><%System.out.println(valorZ);%></td>
-                        </tr>
-                    <%}%>
+                <% for (int i = 0; i <= valorY; i++){%>
                     <tr>
-                        <td><%System.out.println(valorY);%></td>
-                        <td><%System.out.println("-");%></td>
-                        <td><%System.out.println(valorX);%></td>
-                        <td><%System.out.println(valorZ);%></td>
-                        <td><%System.out.println(valorX + valorZ);%></td>
+                        <td><%= i%></td>
+                        <td><%= df.format(valorX)%></td> 
+                        <td>-</td>
+                        <td><%= df.format(valorZ)%></td>
+                        <td><%= df.format(valorZ)%></td>
                     </tr>
-                    <tr>
-                        <td><%System.out.println("Total");%></td>
-                        <td></td>
-                        <td><%System.out.println(valorX);%></td>
-                        <td><%System.out.println(valorZ * valorY);%></td>
-                        <td><%System.out.println(valorX + (valorZ * valorY));%></td>
-                    </tr>
-                </table>
-            <%}catch(Exception ex){%>
-                <%}}%>
-        
-        
+                <% } %>
+                <tr>
+                    <td><%= df.format(valorY)%></td>
+                    <td>-</td>
+                    <td><%= df.format(valorX)%></td>
+                    <td><%= df.format(valorZ)%></td>
+                    <td><%= df.format(valorFinal)%></td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td></td>
+                    <td><%= df.format(valorX)%></td>
+                    <td><%= df.format(valorJuros)%></td>
+                    <td><%= df.format(valorTotal)%></td>
+                </tr>
+            </table> 
+        </div>
+        <%}%>
          <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>
