@@ -35,7 +35,7 @@
             <input type="number" name="prestacoes">
             <label>% de juros:</label>
             <input type="number" name="porcentagem">    
-            <input type="submit" name="calcular" value="Calcular" class="btn-primary" hrel="amortizacao-americana.jsp" role="button"/>
+            <input type="submit" name="calcular" value="Calcular" class="btn-primary" hrel="amortizacao-americana.jsp" role="button" style="background-color:#DB7093"/>
         </form>
               
         <% }else{ %>
