@@ -25,22 +25,20 @@
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
 
-    <% if(request.getParameter("calcular")==null){ %>
+   
           <div align="center">
         <form> 
             <h3>Amortização americana</h3>
             <br>
             <label>Valor a pagar: </label>
-            <input type="number" name="total">
+            <input type="number" name="total" required>
             <label>Meses a pagar:</label>
-            <input type="number" name="prestacoes">
+            <input type="number" name="prestacoes" required>
             <label>% de juros:</label>
-            <input type="number" name="porcentagem">    
+            <input type="number" name="porcentagem" required>    
             <input type="submit" name="calcular" value="Calcular" class="btn-primary" hrel="amortizacao-americana.jsp" role="button" style="background-color:#DB7093"/>
         </form>
-              
-        <% }else{ %>
-            <% 
+        <% if(request.getParameter("calcular")!= null){ 
                 int valorX = Integer.parseInt(request.getParameter("total"));
                 double valorY = Double.parseDouble(request.getParameter("prestacoes"));
                 double valorZ = (valorX/Double.parseDouble(request.getParameter("porcentagem")))*100;

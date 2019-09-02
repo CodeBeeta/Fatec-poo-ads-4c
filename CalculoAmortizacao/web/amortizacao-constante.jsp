@@ -28,7 +28,6 @@
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
     
-         <% if(request.getParameter("calcular")==null){ %>
           <div align="center">
         <form> 
             <h3>Amortização constante</h3>
@@ -46,10 +45,7 @@
              <input type="submit" name="calcular" value="Calcular" class="btn-primary" href="tabela-price.jsp" role="button" style="background-color:#DB7093"/>
         
         </form>
-              
-        <% }else{ %>
-            
-            <% 
+        <% if(request.getParameter("calcular") != null){ 
                 //declaração de variáveis
                 Double valorFinanciado, taxaJuros, numeroMeses, amortizacao, parcela, saldoDevedor, jurosSobreSaldoDevedor,saldoAnterior;
                 
@@ -70,7 +66,6 @@
             <div align="center">
                 <h1 style="color:#DB7093" ><br>Resultado:</h1>
                 <table border='1'>
-                <table> 
                 <tr>
                   
                   <th>&nbsp;#</th>
