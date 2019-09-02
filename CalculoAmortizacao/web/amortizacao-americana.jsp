@@ -41,7 +41,7 @@
         <% if(request.getParameter("calcular")!= null){ 
                 int valorX = Integer.parseInt(request.getParameter("total"));
                 double valorY = Double.parseDouble(request.getParameter("prestacoes"));
-                double valorZ = (valorX/Double.parseDouble(request.getParameter("porcentagem")))*100;
+                double valorZ = (valorX*Double.parseDouble(request.getParameter("porcentagem")))/100;
                 double valorFinal = (valorX + valorZ);
                 double valorJuros = (valorZ * valorY);
                 double valorTotal = (valorX + valorJuros);
