@@ -30,10 +30,11 @@
       <br>
    <div class="jumbotron apresentacao" style="background-color:#DB7093">
     <h1 class="display-4" style='color: white'> <center>Cálculo de Amortização</center></h1>
-    <p><center>Site para executar cálculos de amortização. <br>Com amortização constante, amortização americana e cálculo em tabela price </center>  </p>
-  </div>
+    <p><center>Site para executar cálculos de amortização. <br>Com amortização constante, amortização americana e cálculo em tabela price </center>
+   </div>
+      <br>
 </header>
-<div align="center">
+<!-- <div align="center"> -->
 <section>
   <div class="jumbotron caixal1">
     <h1 class="display-4" style='color:#DB7093'>Ana Paula Augusto</h1>
