@@ -58,7 +58,7 @@
                       <th>Juros</th>
                       <th>Prestação</th>
                     </tr>
-                <% for (int i = 0; i <= valorY; i++){%>
+                <% for (int i = 1; i < valorY; i++){%>
                     <tr>
                         <td><%= i%></td>
                         <td><%= df.format(valorX)%></td> 
@@ -68,7 +68,7 @@
                     </tr>
                 <% } %>
                 <tr>
-                    <td><%= df.format(valorY)%></td>
+                    <td><%= (int) valorY%></td>
                     <td>-</td>
                     <td><%= df.format(valorX)%></td>
                     <td><%= df.format(valorZ)%></td>

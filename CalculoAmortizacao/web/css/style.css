@@ -15,7 +15,17 @@ html {
 body {
   margin-bottom: 90px; /* Margin bottom by footer height */
 }
-
+table {
+    border:solid 1px #9a9a9a;
+}
+td, th {
+    padding: 10px;
+    border-color: #9a9a9a;
+    text-align: center;
+}
+th {
+    color: #DB7093;
+}
 .center {
   margin: auto;
   width: 60%;
@@ -81,7 +91,6 @@ header .apresentacao{
     background: #43BA92;
     border-color: #43BA92;
 }
-
 
 .btncalc{
    border: 0px solid white ;
