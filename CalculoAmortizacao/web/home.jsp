@@ -39,7 +39,6 @@
 <section>
   <div class="jumbotron caixal1">
     <h1 class="display-4" style='color:#DB7093'>Ana Paula Augusto</h1>
-    <hr class="my-4 linha">
     <p>Responsável pela criação da pagina inicial, cabeçalho, rodapé, menu e design.</p>
     <br>
     <p class="lead">
@@ -55,7 +54,6 @@
     <div class="jumbotron caixal1">
     <h1 class="display-4" style='color:#DB7093'>André Luiz da Silva</h1>
     <br>
-    <hr class="my-4 linha">
     <p>Responsável pela criação da página da Tabela Price</p>
     <br>
     <p class="lead">
@@ -71,7 +69,6 @@
   <div class="jumbotron caixal1">
     <h1 class="display-4" style='color:#DB7093'>Mauricio Pedro Costa </h1>
     <br>
-    <hr class="my-4 linha">
     <p>Responsável pela criação da pagina de Amortização Americana</p>
     <br>
     <p class="lead">
@@ -88,7 +85,6 @@
     <div class="jumbotron caixal1">
     <h1 class="display-4" style='color:#DB7093'>Roberta Cardoso Novaes</h1>
     <br>
-    <hr class="my-4 linha"> 
      <p>Responsável pela criação da página de  Amortização Constante</p>
      <br>
     <p class="lead">
