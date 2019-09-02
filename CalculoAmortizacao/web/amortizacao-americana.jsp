@@ -13,15 +13,13 @@
         <title>Inicio</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <style>
-            body {
-                font-family: 'Roboto';
-            }
-        </style>
     </head>
-    
-
-    
+    <style>
+        body {
+            font-family: 'Roboto';
+            overflow:auto;
+        }
+    </style>
     <body>
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
@@ -37,7 +35,7 @@
                 <%int valorX = Integer.parseInt(request.getParameter("total"));%>
                 <%double valorY = Double.parseDouble(request.getParameter("presto"));%>
                 <%double valorZ = (valorX/Double.parseDouble(request.getParameter("porcent")))*100; %>
-                <table>
+                <table border="1">
                     <tr>
                         <th>Mês</th>
                         <th>Saldo devedor</th>
